@@ -62,14 +62,14 @@ const Main = () => {
           <ProjectCard
             image="/assets/msDashboard.png"
             title="MS Dashboard"
-            description="A modern analytics dashboard built with React and Tailwind CSS. Features real-time data visualization and interactive metrics for monitoring system performance."
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             projectLink="/msdashboard"
           />
 
           <ProjectCard
             image="/assets/easyplay.png"
             title="EasyPlay"
-            description="A streamlined music player application that brings your favorite tunes to life with an intuitive interface and seamless playback experience."
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             projectLink="/easyplay"
           />
 
@@ -84,7 +84,7 @@ const Main = () => {
           <ProjectCard
             image="/assets/chatLogs.png"
             title="Chat Logs"
-            description="A comprehensive chat logging system that helps track and analyze conversation patterns with advanced filtering and search capabilities."
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             projectLink="/chatlogs"
           />
         </div>
