@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import { useLocation } from "react-router-dom";
-import resume from "../assets/resume.pdf";
+import resume from "/assets/resume.pdf";
 
 const Nav = () => {
   const location = useLocation(); // Get the current location of the page
