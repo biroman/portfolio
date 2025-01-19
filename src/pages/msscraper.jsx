@@ -1,5 +1,4 @@
 import ProjectDetail from "./ProjectDetail";
-import msScraper from "./assets/msScraper.png";
 
 export const Msscraper = () => {
   return (
@@ -21,7 +20,7 @@ export const Msscraper = () => {
       ]}
       githubLink="https://github.com/biroman/scraper"
       liveLink="https://scrap-beta.vercel.app/"
-      projectImage={msScraper}
+      projectImage="/assets/msScraper.png"
     />
   );
 };

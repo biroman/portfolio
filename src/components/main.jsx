@@ -60,21 +60,21 @@ const Main = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-2 gap-6 mb-24">
           <ProjectCard
-            image="/src/assets/msDashboard.png"
+            image="/assets/msDashboard.png"
             title="MS Dashboard"
             description="A modern analytics dashboard built with React and Tailwind CSS. Features real-time data visualization and interactive metrics for monitoring system performance."
             projectLink="/msdashboard"
           />
 
           <ProjectCard
-            image="/src/assets/easyplay.png"
+            image="/assets/easyplay.png"
             title="EasyPlay"
             description="A streamlined music player application that brings your favorite tunes to life with an intuitive interface and seamless playback experience."
             projectLink="/easyplay"
           />
 
           <ProjectCard
-            image="/src/assets/msScraper.png"
+            image="/assets/msScraper.png"
             title="Web Scraping Data Viewer"
             description="An interactive web application that displays a sortable and searchable table of player information, pulling data from a raw github text file which recieves its data from a custom Python scraper program. It provides features like dynamic styling, editable fields with local storage, clipboard copying, and user feedback."
             externalLink="https://scrap-beta.vercel.app/"
@@ -82,7 +82,7 @@ const Main = () => {
           />
 
           <ProjectCard
-            image="/src/assets/chatLogs.png"
+            image="/assets/chatLogs.png"
             title="Chat Logs"
             description="A comprehensive chat logging system that helps track and analyze conversation patterns with advanced filtering and search capabilities."
             projectLink="/chatlogs"
