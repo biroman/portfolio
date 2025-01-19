@@ -20,7 +20,7 @@ export const Msscraper = () => {
       ]}
       githubLink="https://github.com/biroman/scraper"
       liveLink="https://scrap-beta.vercel.app/"
-      projectImage="/src/assets/msScraper.png"
+      projectImage="/assets/msScraper.png"
     />
   );
 };
