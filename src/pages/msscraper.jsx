@@ -19,9 +19,9 @@ export const Msscraper = () => {
         "Solution 2 description",
         // etc
       ]}
-      githubLink={msScraper}
+      githubLink="https://github.com/biroman/scraper"
       liveLink="https://scrap-beta.vercel.app/"
-      projectImage="./assets/msScraper.png"
+      projectImage={msScraper}
     />
   );
 };
