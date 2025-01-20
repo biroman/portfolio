@@ -15,7 +15,7 @@ const Nav = () => {
           Eivind Buodd
         </div>
         <div className="flex container mx-auto flex-row justify-end align-center gap-8">
-          <div className="w-[35px]">
+          <div className="w-[55px]">
             <NavLink
               className={({ isActive }) =>
                 isActive
@@ -24,7 +24,7 @@ const Nav = () => {
               }
               to="/work"
             >
-              Work
+              Projects
             </NavLink>{" "}
           </div>
           <div className="w-[40px]">

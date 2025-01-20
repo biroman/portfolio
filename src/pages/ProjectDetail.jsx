@@ -1,4 +1,4 @@
-import { GithubLogo } from "@phosphor-icons/react";
+import { GithubLogo, Monitor } from "@phosphor-icons/react";
 import PropTypes from "prop-types";
 
 const ProjectDetail = ({
@@ -46,6 +46,7 @@ const ProjectDetail = ({
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 border border-[#3A3A3A] text-[#3A3A3A] rounded-lg hover:bg-[#4F4F4F] hover:text-white transition-all duration-300"
           >
+            <Monitor size={20} />
             Live Demo
           </a>
         )}

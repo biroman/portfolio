@@ -75,7 +75,7 @@ const Main = () => {
 
           <ProjectCard
             image="/assets/msScraper.png"
-            title="Web Scraping Data Viewer"
+            title="User Data Viewer"
             description="An interactive web application that displays a sortable and searchable table of player information, pulling data from a raw github text file which recieves its data from a custom Python scraper program. It provides features like dynamic styling, editable fields with local storage, clipboard copying, and user feedback."
             externalLink="https://scrap-beta.vercel.app/"
             projectLink="/msscraper"
@@ -83,8 +83,8 @@ const Main = () => {
 
           <ProjectCard
             image="/assets/chatLogs.png"
-            title="Chat Logs"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            title="Twitch Chat Logs"
+            description="An webpage where users can search for other Twitch users to view their chat logs on a specific Twitch channel. The webpage was designed to resemble how the Twitch chat look and behaved, and provides a dynamic and interactive experience for users to explore and analyze their chat history."
             projectLink="/chatlogs"
           />
         </div>
