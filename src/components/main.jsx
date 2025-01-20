@@ -12,11 +12,11 @@ const ProjectCard = ({
     <div className="relative h-[500px] w-full [perspective:1000px] group hover:z-10">
       <div className="relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         {/* Front of card */}
-        <div className="absolute w-full h-full rounded-3xl overflow-hidden">
+        <div className="absolute w-full h-full rounded-xl overflow-hidden">
           <img className="w-full h-full object-cover" src={image} alt={title} />
         </div>
         {/* Back of card */}
-        <div className="absolute w-full h-full rounded-3xl overflow-hidden bg-[#f5f5f7] text-[#3A3A3A] [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col items-center justify-center p-8">
+        <div className="absolute w-full h-full rounded-xl overflow-hidden bg-[#f5f5f7] text-[#3A3A3A] [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col items-center justify-center p-8">
           <h3 className="text-2xl font-semibold mb-4">{title}</h3>
           <p className="text-sm">{description}</p>
           <div className="mt-6 flex gap-4">

@@ -22,7 +22,7 @@ const ProjectDetail = ({
         <img
           src={projectImage}
           alt={title}
-          className="w-full h-[600px] object-cover rounded-3xl"
+          className="w-full h-[400px] rounded-xl object-cover"
         />
       </div>
 
