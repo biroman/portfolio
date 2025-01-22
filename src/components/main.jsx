@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const ProjectCard = ({
@@ -8,34 +9,63 @@ const ProjectCard = ({
   projectLink,
   externalLink,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => setIsMobile(window.innerWidth < 768);
+    checkIfMobile(); // Initial check
+    window.addEventListener("resize", checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
+  const handleMobileClick = () => {
+    if (isMobile) {
+      window.location.href = projectLink; // Redirect to the project link on mobile
+    }
+  };
+
   return (
-    <div className="relative h-[500px] w-full [perspective:1000px] group hover:z-10">
-      <div className="relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        {/* Front of card */}
-        <div className="absolute w-full h-full rounded-xl overflow-hidden">
-          <img className="w-full h-full object-cover" src={image} alt={title} />
-        </div>
-        {/* Back of card */}
-        <div className="absolute w-full h-full rounded-xl overflow-hidden bg-[#f5f5f7] text-[#3A3A3A] [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col items-center justify-center p-8">
-          <h3 className="text-2xl font-semibold mb-4">{title}</h3>
-          <p className="text-sm">{description}</p>
-          <div className="mt-6 flex gap-4">
-            <NavLink
-              to={projectLink}
-              className="px-4 py-2 bg-[#3A3A3A] text-white rounded-lg hover:bg-[#4F4F4F] active:bg-[#3A3A3A] hover:text-white"
-            >
-              View Project
-            </NavLink>
-            <NavLink
-              to={externalLink}
-              className="px-4 py-2 border border-[#3A3A3A] text-[#3A3A3A] rounded-lg hover:bg-[#4F4F4F] hover:text-white"
-              target="_blank"
-            >
-              Live Demo
-            </NavLink>
+    <div
+      className={` [perspective:1000px] ${isMobile ? "" : "group hover:z-10"}`}
+      onClick={handleMobileClick} // Only triggers on mobile
+    >
+      {!isMobile ? (
+        <div className="relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          {/* Front of card */}
+          <div className="w-full h-full rounded-xl overflow-hidden">
+            <img
+              className="w-full h-full object-cover md:w-null md:h-full"
+              src={image}
+              alt={title}
+            />
+          </div>
+          {/* Back of card */}
+          <div className="absolute w-full h-full rounded-xl overflow-hidden bottom-0 bg-[#f5f5f7] text-[#3A3A3A] [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col items-center justify-center p-8">
+            <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+            <p className="text-sm">{description}</p>
+            <div className="mt-6 flex gap-4">
+              <NavLink
+                to={projectLink}
+                className="px-4 py-2 bg-[#3A3A3A] text-white rounded-lg hover:bg-[#4F4F4F] active:bg-[#3A3A3A] hover:text-white"
+              >
+                View Project
+              </NavLink>
+              <NavLink
+                to={externalLink}
+                className="px-4 py-2 border border-[#3A3A3A] text-[#3A3A3A] rounded-lg hover:bg-[#4F4F4F] hover:text-white"
+                target="_blank"
+              >
+                Live Demo
+              </NavLink>
+            </div>
           </div>
         </div>
-      </div>
+      ) : (
+        /* Mobile view with static card */
+        <div className="w-full rounded-xl overflow-hidden">
+          <img className="w-full h-full object-cover" src={image} alt={title} />
+        </div>
+      )}
     </div>
   );
 };
@@ -51,14 +81,14 @@ ProjectCard.propTypes = {
 const Main = () => {
   return (
     <div className="flex flex-col w-full h-full">
-      <div className="flex m-36 items-center">
-        <div className="container flex flex-col mx-auto text-center font-bold text-4xl text-[#3A3A3A] gap-4">
+      <div className="flex my-12 md:m-36 items-center px-4">
+        <div className="container flex flex-col mx-auto text-center font-bold text-2xl md:text-4xl text-[#3A3A3A] gap-4">
           <h1>Hey, I&apos;m Eivind Buodd. </h1>
           <h1>Have a look at some of my projects.</h1>
         </div>
       </div>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-2 gap-6 mb-24">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-24">
           <ProjectCard
             image="/assets/msDashboard.png"
             title="MS Dashboard"
