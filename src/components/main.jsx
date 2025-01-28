@@ -105,8 +105,8 @@ const Main = () => {
 
           <ProjectCard
             image="/assets/msScraper.png"
-            title="User Data Viewer"
-            description="An interactive web application that displays a sortable and searchable table of player information, pulling data from a raw github text file which recieves its data from a custom Python scraper program. It provides features like dynamic styling, editable fields with local storage, clipboard copying, and user feedback."
+            title="Website scraper and userdata viewer"
+            description="An interactive web application that displays a sortable and searchable table of player information, pulling data from a github text file which recieves its data from a custom Python scraper program. It provides features like dynamic styling, editable fields with local storage, clipboard copying, and user feedback."
             externalLink="https://scrap-beta.vercel.app/"
             projectLink="/msscraper"
           />
