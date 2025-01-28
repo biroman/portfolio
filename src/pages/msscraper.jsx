@@ -10,7 +10,7 @@ export const Msscraper = () => {
       problemSpace={[
         "No API access to track player data",
         "Python CLI not accessible for non-technical users",
-        "Need for intuitive data visualization for 500+ users",
+        "Need for intuitive data visualization for up to 500+ users",
         "Complex data hierarchy requiring clear visual presentation",
       ]}
       keyFeatures={[
@@ -92,7 +92,7 @@ export const Msscraper = () => {
         },
       ]}
       outcomes={[
-        "Streamlined data access for 500+ monthly users through intuitive interface design",
+        "Streamlined data access for up to 500+ monthly users through intuitive interface design",
         "Reduced data lookup time from minutes to seconds with efficient search and sort features",
         "Created a visually engaging experience with thoughtful color coding and animations",
         "Implemented automated data collection",
